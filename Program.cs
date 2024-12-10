@@ -8,39 +8,37 @@ namespace ConsoleApp_n13
 {
     class Program
     {
-        static int Input(string a)
+        static string Input(string a)
         {
             Console.Write(a);
-            return int.Parse(Console.ReadLine());
+            return Console.ReadLine();
         }
 
-        static void Week(int a)
+        static void Week(string a)
         {
             switch (a)
             {
-                case 1:
-                case 2:
-                case 12:
-                    Console.WriteLine("Зима");
+                case "ф":
+                    Console.WriteLine("физика");
                     break;
-                case 3:
-                case 4:
-                case 5:
-                    Console.WriteLine("Весна");
+                case "м":
+
+                    Console.WriteLine("математика");
                     break;
-                case 6:
-                case 7:
-                case 8:
-                    Console.WriteLine("Лето");
+                case "и":
+
+                    Console.WriteLine("история");
                     break;
-                case 9:
-                case 10:
-                case 11:
-                    Console.WriteLine("Осень");
+                case "г":
+
+                    Console.WriteLine("география");
+                    break;
+                case "б":
+                    Console.WriteLine("биология");
                     break;
 
                 default:
-                    Console.WriteLine("не верное число месяца");
+                    Console.WriteLine("не верная буква");
                     break;
             }
         }
@@ -52,7 +50,7 @@ namespace ConsoleApp_n13
         {
 
 
-            int a = Input("Введите число месяца: ");
+            string a = Input("Введите букву предмета: ");
             Week(a);
             Console.ReadLine();
         }
