@@ -13,28 +13,40 @@ namespace ConsoleApp_n13
             Console.Write(a);
             return Console.ReadLine();
         }
+        static int InputInt(string a)
+        {
+            Console.Write(a);
+            return int.Parse(Console.ReadLine());
+        }
 
         static void Week(string a)
         {
             switch (a)
             {
-                case "а":
-                    Console.WriteLine("автомобиль 800км/ч");
+                case "к":
+                    Console.WriteLine("круг");
+                    int r = InputInt("Введите радиус ");
+                    double s = 3.14 * r * r;
+                    double p = 2 * 3.14 * r;
+                    Console.WriteLine($"площадь: {s}   Периметр: {p}");
                     break;
-                case "в":
 
-                    Console.WriteLine("велосипед 40км/ч");
-                    break;
-                case "м":
-
-                    Console.WriteLine("мотоцикл 300км/ч");
-                    break;
-                case "с":
-
-                    Console.WriteLine("самолет 1000км/ч");
-                    break;
                 case "п":
-                    Console.WriteLine("поезд 300км/ч");
+                    Console.WriteLine("прямоугольник");
+                    int d1 = InputInt("Введите длину ");
+                    int d2 = InputInt("Введите ширину ");
+                    s = d1 * d2;
+                    p = 2 * (d2 + d1);
+                    Console.WriteLine($"площадь: {s}   Периметр: {p}");
+                    break;
+
+                case "т":
+                    Console.WriteLine("треугольник");
+                    d1 = InputInt("Введите стороны ");
+                    d2 = InputInt("Введите высоту ");
+                    s = (d1 * d2)/2;
+                    p = d1*3;
+                    Console.WriteLine($"площадь: {s}   Периметр: {p}");
                     break;
 
                 default:
@@ -43,14 +55,16 @@ namespace ConsoleApp_n13
             }
         }
         /// <summary>
-        /// Задача 2. По номеру месяца вывести его название.
+        /// Задача 6. Дан признак геометрической фигуры на плоскости: к – круг, п – прямоугольник,
+        /// т - треугольник. Вывести на экран периметр и площадь заданной фигуры 
+        /// (данные, необходимые для расчетов, запросить у пользователя).
         /// </summary>
         /// <param name="args"></param>
         static void Main(string[] args)
         {
 
 
-            string a = Input("Введите букву транспорта: ");
+            string a = Input("Введите букву фигуры: ");
             Week(a);
             Console.ReadLine();
         }
