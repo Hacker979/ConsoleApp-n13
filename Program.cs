@@ -19,40 +19,24 @@ namespace ConsoleApp_n13
             switch (a)
             {
                 case 1:
-                    Console.WriteLine("Январь");
-                    break;
                 case 2:
-                    Console.WriteLine("Февраль");
+                case 12:
+                    Console.WriteLine("Зима");
                     break;
                 case 3:
-                    Console.WriteLine("Март");
-                    break;
                 case 4:
-                    Console.WriteLine("Апрель");
-                    break;
                 case 5:
-                    Console.WriteLine("Май");
+                    Console.WriteLine("Весна");
                     break;
                 case 6:
-                    Console.WriteLine("Июнь");
-                    break;
                 case 7:
-                    Console.WriteLine("Июль");
-                    break;
                 case 8:
-                    Console.WriteLine("Август");
+                    Console.WriteLine("Лето");
                     break;
                 case 9:
-                    Console.WriteLine("Сентябрь");
-                    break;
                 case 10:
-                    Console.WriteLine("Октябрь");
-                    break;
                 case 11:
-                    Console.WriteLine("Ноябрь");
-                    break;
-                case 12:
-                    Console.WriteLine("Декабрь");
+                    Console.WriteLine("Осень");
                     break;
 
                 default:
@@ -68,7 +52,7 @@ namespace ConsoleApp_n13
         {
 
 
-            int a = Input("Введите число месяца : ");
+            int a = Input("Введите число месяца: ");
             Week(a);
             Console.ReadLine();
         }
