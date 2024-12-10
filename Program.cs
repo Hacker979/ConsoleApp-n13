@@ -18,23 +18,23 @@ namespace ConsoleApp_n13
         {
             switch (a)
             {
-                case "ф":
-                    Console.WriteLine("физика");
+                case "а":
+                    Console.WriteLine("автомобиль 800км/ч");
+                    break;
+                case "в":
+
+                    Console.WriteLine("велосипед 40км/ч");
                     break;
                 case "м":
 
-                    Console.WriteLine("математика");
+                    Console.WriteLine("мотоцикл 300км/ч");
                     break;
-                case "и":
+                case "с":
 
-                    Console.WriteLine("история");
+                    Console.WriteLine("самолет 1000км/ч");
                     break;
-                case "г":
-
-                    Console.WriteLine("география");
-                    break;
-                case "б":
-                    Console.WriteLine("биология");
+                case "п":
+                    Console.WriteLine("поезд 300км/ч");
                     break;
 
                 default:
@@ -50,7 +50,7 @@ namespace ConsoleApp_n13
         {
 
 
-            string a = Input("Введите букву предмета: ");
+            string a = Input("Введите букву транспорта: ");
             Week(a);
             Console.ReadLine();
         }
