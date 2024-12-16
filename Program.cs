@@ -45,7 +45,7 @@ namespace ConsoleApp_n13
             }
         }
         /// <summary>
-        /// Задача 2. По номеру месяца вывести его название.
+        /// Задача 3. По номеру месяца вывести название времени года.
         /// </summary>
         /// <param name="args"></param>
         static void Main(string[] args)
